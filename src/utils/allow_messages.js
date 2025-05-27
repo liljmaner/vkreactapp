@@ -18,7 +18,7 @@ export const Allow_Messages = () =>
                 })
                 .then((user_data) => { 
                 console.log("user_data:",user_data.vk_user_id);
-                axios.post("http://localhost:4000/vkbot/users/insert_newsletter",{
+                axios.post("https://klenrest.ru/vkbot/users/insert_newsletter",{
                     sign: params_data['sign'],
                     vk_access_token_settings: params_data['vk_access_token_settings'],
                     vk_app_id: params_data['vk_app_id'],
